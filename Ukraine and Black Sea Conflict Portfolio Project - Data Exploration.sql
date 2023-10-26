@@ -61,9 +61,12 @@ Fetch Next 5 Rows Only
 -- General Information
 
 
--- Shows total number of disorders and total number of deaths
+-- Shows total number of disorders, deaths and civil targeting disorders
 
-Select Count(Disorder_Type) as Total_Number_of_Disorders, Sum(Fatalities) as Total_Deaths From UkraineBS
+Select Count(Disorder_Type) as Total_Number_of_Disorders,
+Sum(Fatalities) as Total_Deaths, 
+(Select Count(CIVILIAN_TARGETING) from UkraineBS where CIVILIAN_TARGETING like 'Civilian targeting') as Civil_Targeting_Disorders
+From UkraineBS
 
 
 -- Showing which the lethality of each event and what percentage of the deaths do they represent
