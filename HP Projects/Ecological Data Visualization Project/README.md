@@ -1,4 +1,4 @@
-## Ecological Data Visualization
+## Ecological Data Visualization Project
 This is the first of four HP project. This project is based on analyzing the ecological data that involves data about temperature changes, energy used and land coverage and fires all over the globe. In this project, I create advanced visualizations of the data in Python, such as Bubble charts, interactive maps, sophisticated line charts and evolution of maps along the time.
 
 ## The Data
